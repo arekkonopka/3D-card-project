@@ -1,0 +1,113 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  height: 100vh;
+  font-family: 'Roboto Mono', monospace;
+  perspective: 100px;
+  overflow: hidden;
+
+}
+div.wrapper {
+  transform-style: preserve-3d;
+  width: 440px;
+  height: 83vh;
+  border: 10px solid rgb(167, 218, 178);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+}
+.main{
+  position: relative;
+  flex-grow: 0.9;
+  width:100%; 
+
+}
+.main h1{
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%); 
+  font-size: 1.3rem;
+  background:linear-gradient(0deg, #2f2f28 0%, #2af561 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow:2px 2px 4px black;
+  transition: 0.4s;
+}
+
+.main .background{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width:20vh;
+  height: 20vh;
+  margin: 0 0 0 0 ;
+  background-color: #eae408;
+  background-image: linear-gradient(0deg, #eae408 0%, #2aef96 100%);
+  border-radius: 50%;
+  z-index: 1;
+  transition: 0.4s;
+}
+
+#shoe{
+   position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 50%;
+  z-index:2;
+  transition: 0.4s;
+}
+
+.description{
+  text-align: center;
+  flex-grow: 0.15;
+}
+.description h2 {
+  padding: 20px 10px;
+  font-weight: 300;
+  font-size: 1rem;
+
+  transition: 0.4s;
+}
+section{
+flex-grow: 0.1;
+}
+section button{
+  width: 40px;
+  height: 40px;
+  margin: 0 15px;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  background-color: rgb(167, 218, 178);
+  box-shadow:2px 2px 4px black;
+  color: white;
+  outline:none;
+}
+.purchase {
+  width:100%
+}
+.purchase button{
+  display: block;
+  width: 90%;
+  height: 2.5rem;
+  margin: 40px auto;
+  border-radius: 10px;
+  cursor: pointer;
+  outline:none;
+  font-size: 1.4rem;
+  color:white;
+  background-color:rgb(167, 218, 178);
+  box-shadow:2px 2px 4px black;
+}
